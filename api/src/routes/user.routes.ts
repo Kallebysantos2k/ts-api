@@ -1,11 +1,8 @@
 import { ServerRoute } from '@hapi/hapi';
+import CreateUserUCRoutes from '../useCases/CreateUser/CreateUserUC.routes';
 
-export const get = (): ServerRoute => ({
-  method: 'GET',
-  path: '/user',
-  handler: () => 'Rota get User',
-});
-
-export const userRoutes = [
-  get(),
+const userRoutes: ServerRoute[] = [
+  CreateUserUCRoutes,
 ];
+
+export default userRoutes;
