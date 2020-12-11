@@ -1,4 +1,5 @@
 import Hapi from '@hapi/hapi';
+import routes from './routes/routes';
 
 class App {
   public server: Hapi.Server;
@@ -8,15 +9,7 @@ class App {
       port: 3333,
     });
 
-    this.routes();
-  }
-
-  private routes(): void {
-    this.server.route({
-      method: 'GET',
-      path: '/',
-      handler: () => 'Hello World!',
-    });
+    this.server.route(routes);
   }
 }
 
