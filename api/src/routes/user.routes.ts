@@ -1,14 +1,11 @@
 import { ServerRoute } from '@hapi/hapi';
-import GetUser from './user/get.routes';
 
-class UserRoutes {
-  public routes: ServerRoute[];
+export const get = (): ServerRoute => ({
+  method: 'GET',
+  path: '/user',
+  handler: () => 'Rota get User',
+});
 
-  public constructor() {
-    this.routes = [
-      GetUser,
-    ];
-  }
-}
-
-export default new UserRoutes().routes;
+export const userRoutes = [
+  get(),
+];

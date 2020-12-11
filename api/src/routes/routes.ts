@@ -1,14 +1,8 @@
 import { ServerRoute } from '@hapi/hapi';
-import userRoutes from './user.routes';
+import { userRoutes } from './user.routes';
 
-class Routes {
-  public routes: ServerRoute[];
+const routes: ServerRoute[] = [
+  ...userRoutes,
+];
 
-  public constructor() {
-    this.routes = [
-      ...userRoutes,
-    ];
-  }
-}
-
-export default new Routes().routes;
+export default routes;
