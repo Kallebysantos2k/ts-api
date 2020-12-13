@@ -19,3 +19,20 @@ services:
       - mongo-data:/data/db
     networks: 
       - ts-backend
+
+  app:
+    image: node:15.4.0-alpine
+    container_name: 'ts-app'
+    ports: 
+      - 3333:3333
+    working_dir: '/home/node/app'
+    volumes: 
+      - ./:/home/node/app
+    networks: 
+      - ts-backend
+    command: 
+      - sh
+      - -c
+      -  |
+        ./init.sh ${MODE}
+
