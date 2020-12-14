@@ -16,7 +16,7 @@ if [ $# -lt 1 ]; then
   echo -e "${CYAN}Starting on automode..."
   echo -e "${GREEN}Installing dependencies...${NC}"
   yarn install
-  MODE='start'
+  MODE='dev'
   echo -e "${PURPLE}Starting server in ${STATUS} mode...${NC}"
 fi
 
