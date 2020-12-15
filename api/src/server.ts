@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 
 import database from '.';
 import app from './app';
+import User from './entities/User';
 import { IDatabaseProvider } from './providers/IDatabaseProvider';
 
 dotenv.config();
@@ -18,3 +19,11 @@ const uri = databaseProvider.generateUri({
 databaseProvider.connect(uri);
 
 app.start();
+
+const u = User({
+  name: 'Kalleby',
+  password: '1234',
+  email: 'kalleby@gmail.com',
+}, 'idbemflexx');
+
+console.log(u);
