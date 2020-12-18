@@ -1,0 +1,51 @@
+<mxfile host="65bd71144e" modified="2020-12-18T08:16:52.271Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" version="13.10.0" etag="gANQbSrSkR0DFZxeaq6m" type="embed">
+    <diagram id="6J0bSmd9RhGfFIFaUM8r" name="Page-1">
+        <mxGraphModel dx="786" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;strokeWidth=2;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="350" y="300" width="360" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Sistema Procurasse" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="14">
+                    <mxGeometry x="120" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;strokeWidth=2;strokeColor=#3700CC;fontColor=#ffffff;fillColor=none;" vertex="1" parent="14">
+                    <mxGeometry y="20" width="360" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" edge="1" parent="1" source="3" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="#User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="450" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="#CreateUser" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="350" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="#Authentication" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="485" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.015;entryY=0.62;entryDx=0;entryDy=0;dashed=1;entryPerimeter=0;fillColor=#d80073;strokeColor=#A50040;fontColor=#FF0080;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" edge="1" parent="1" source="6" target="5">
+                    <mxGeometry x="0.3246" y="31" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="#FindUser" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="555" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.015;entryY=0.362;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d80073;strokeColor=#A50040;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" edge="1" parent="1" source="7" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="#UpdateUser" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="450" width="90" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

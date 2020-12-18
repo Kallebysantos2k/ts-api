@@ -1,0 +1,8 @@
+Main objective:
+  + Permitir que pequenos desenvolvedores possam encontrar pessoas e formar uma equipe de trabalho
+
+Features:
+  - Criar perfil de utilizador
+  - Fazer autentificação (Login)
+  - Consultar perfis de outros utilizadores
+  - Atualizar dados pessoais
