@@ -1,5 +1,5 @@
 import Mongoose from 'mongoose';
-import { IDatabaseProvider, IDatabaseConfig } from '@providers/IDatabaseProvider';
+import { IDatabaseProvider, IDatabaseConfig } from '../IDatabaseProvider';
 
 const MongooseProvider : IDatabaseProvider = {
   generateUri: (config: IDatabaseConfig): string => (
