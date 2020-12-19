@@ -1,25 +1,10 @@
 version: '3.1'
 
-volumes: 
-  mongo-data:
-    name: ${DB_VOLUME}
-
 networks: 
   ts-backend:
     driver: 'bridge'
 
 services: 
-  mongo:
-    image: mongo
-    container_name: 'ts-mongo'
-    restart: 'always'
-    ports: 
-      - 27017:27017
-    volumes: 
-      - mongo-data:/data/db
-    networks: 
-      - ts-backend
-
   app:
     image: node:15.3.0-slim
     container_name: 'ts-app'

@@ -8,7 +8,7 @@ CN='\033[0m'     #Color Null
 function verify {
   case $OPTION in
   'start') execute ;;
-  'test') execute && inspect && stop;;
+  'test') executeTest && inspect && stop;;
   'dev') execute ;;
   *) wrong ;;
   esac
@@ -32,6 +32,12 @@ function execute {
   clear
   echo -e "${CC}Composing containers...${CN}"
   MODE=$OPTION docker-compose up -d
+}
+
+function executeTest {
+  clear
+  echo -e "${CC}Composing containers...${CN}"
+  MODE=$OPTION docker-compose -f docker-compose.test.yml up -d
 }
 
 function inspect {
