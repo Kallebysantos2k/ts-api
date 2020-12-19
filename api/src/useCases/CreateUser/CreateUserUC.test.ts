@@ -1,22 +1,26 @@
-import * as Mongoose from 'mongoose';
-import It from 'ava';
+import Ava, { TestInterface } from 'ava';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
-It.before('Starts a temporary memory cache', async () => {
-  const Memory = new MongoMemoryServer();
-  const uri: string = await Memory.getUri();
-  console.log(uri);
-  await Mongoose.connect(uri, {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  });
+import MongooseProvider from '../../providers/implementations/MongooseProvider';
+import { IDatabaseProvider } from '../../providers/IDatabaseProvider';
+
+const It = Ava as TestInterface<{
+  provider: IDatabaseProvider,
+  memory: MongoMemoryServer,
+}>;
+
+It.before('Starts a temporary memory cache', async (exec) => {
+  const shared = exec.context;
+  shared.provider = MongooseProvider;
+  shared.memory = new MongoMemoryServer();
+  const uri: string = await shared.memory.getUri();
+
+  await shared.provider.connect(uri);
 });
 
-It.after.always('Closing memory cache', () => {
-  Mongoose.disconnect();
-  // Memory.stop();
+It.after.always('Closing memory cache', (exec) => {
+  exec.context.provider.disconnect();
+  exec.context.memory.stop();
 });
 
 It('Should create user', (t) => {

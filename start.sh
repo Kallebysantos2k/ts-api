@@ -7,9 +7,9 @@ CN='\033[0m'     #Color Null
 
 function verify {
   case $OPTION in
-  'start') execute ;;
+  'start') execute;;
   'test') executeTest && inspect && stop;;
-  'dev') execute ;;
+  'dev') execute && inspect;;
   *) wrong ;;
   esac
 }
