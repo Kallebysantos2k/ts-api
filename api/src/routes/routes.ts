@@ -1,5 +1,5 @@
 import { ServerRoute } from '@hapi/hapi';
-import userRoutes from '@routes/user.routes';
+import userRoutes from './user.routes';
 
 const routes: ServerRoute[] = [
   ...userRoutes,
