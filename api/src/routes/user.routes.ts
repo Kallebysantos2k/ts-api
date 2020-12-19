@@ -1,5 +1,5 @@
 import { ServerRoute } from '@hapi/hapi';
-import CreateUserUCRoutes from '../useCases/CreateUser/CreateUserUC.routes';
+import CreateUserUCRoutes from '@useCases/CreateUser/CreateUserUC.routes';
 
 const userRoutes: ServerRoute[] = [
   CreateUserUCRoutes,
